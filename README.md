@@ -1,4 +1,4 @@
-# Arch Dotfiles - HP EliteBook 840 G8
+# Arch Dotfiles
 
 Personal Arch Linux configuration using Hyprland.
 
