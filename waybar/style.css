@@ -1,0 +1,61 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+}
+
+window#waybar {
+    background: rgba(20, 20, 30, 0.6);
+    border-radius: 0;
+}
+
+/* módulos */
+#workspaces button,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+    background: rgba(255, 255, 255, 0.08);
+    margin: 4px 6px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    color: #e0e0e0;
+}
+
+/* hover bonito */
+#workspaces button:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* workspace activo */
+#workspaces button.active {
+    background: rgba(100, 150, 255, 0.6);
+    color: white;
+}
+
+/* batería crítica */
+#battery.critical {
+    background: rgba(255, 80, 80, 0.6);
+}
+
+#custom-notifications.none {
+  color: #aaaaaa;
+}
+
+#custom-notifications.notif {
+  color: #ff5555;
+}
+
+#custom-notifications.dnd {
+  color: #8888ff;
+}

@@ -1,0 +1,51 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "kitty-icat",
+        "source": "$HOME/.config/fastfetch/arch_logo.png",
+        "width": 28,
+        "height": 12,
+        "padding": {
+            "top": 2,
+            "left": 2,
+            "right": 6
+        }
+    },
+    "display": {
+        "separator": " ➜  ",
+        "color": {
+            "keys": "cyan"
+        },
+        "key": {
+            "width": 22
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        { "type": "host", "key": "󰌢 Equipo" },
+        { "type": "cpu", "key": "󰻠 CPU", "temp": true, "format": "{1} @ {6}" },
+        { "type": "memory", "key": "󰍛 RAM", "format": "{1} / {2} ({3})" },
+        { "type": "disk", "key": "󰋊 Disco (/)", "folders": "/", "format": "{1} / {2} ({3})" },
+        { "type": "battery", "key": "󰁹 Batería", "format": "{4} - {5}" },
+        "break",
+        { "type": "localip", "key": "󰩟 LAN", "showIpv6": false },
+        { "type": "publicip", "key": "󰩠 WAN (IP)" },
+        {
+            "type": "command",
+            "key": "󱚾 Wireguard",
+            "text": "ip addr show wg0 > /dev/null 2>&1 && echo '󰄬 Activo' || echo '󰅖 Inactivo'"
+        },
+        "break",
+        { "type": "weather", "key": "󰖐 Clima", "location": "Santander" },
+        { "type": "player", "key": "󰎆 Player" },
+        { "type": "media", "key": "󰝚 Multimedia" },
+        "break",
+        { "type": "os", "key": "󰣇 OS" },
+        { "type": "packages", "key": "󰏗 Paquetes" },
+        { "type": "uptime", "key": "󱎫 Uptime" },
+        { "type": "datetime", "key": "󰃭 Fecha y Hora", "format": "{1}/{3}/{11} - {14}:{17}:{20}" },
+        "break",
+        { "type": "colors", "symbol": "circle" } 
+    ]
+}

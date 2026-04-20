@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = TU_CLAVE_PRIVADA_AQUÍ
+Address = 172.21.100.4/32
+MTU = 1280
+[Peer]
+PublicKey = CLAVE_PUBLICA_SERVIDOR_AQUÍ
+Endpoint = rym.duckdns.org:41796
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
