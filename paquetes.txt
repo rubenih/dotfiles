@@ -83,3 +83,4 @@ steam
 geary
 gnome-keyring
 libsecret
+github-cli
