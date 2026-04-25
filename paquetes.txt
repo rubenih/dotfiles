@@ -80,3 +80,4 @@ zram-generator
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols-common
 steam
+geary
