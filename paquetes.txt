@@ -81,3 +81,5 @@ ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols-common
 steam
 geary
+gnome-keyring
+libsecret
