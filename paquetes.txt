@@ -59,7 +59,6 @@ smartmontools
 sof-firmware
 sudo
 swaync
-thunderbird
 traceroute
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
